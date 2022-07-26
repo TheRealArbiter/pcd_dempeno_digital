@@ -26,6 +26,7 @@ package-lock.json
 # Maven
 target/
 dist/
+certs/
 
 # JetBrains IDE
 .idea/
