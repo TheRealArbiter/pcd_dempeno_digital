@@ -1,0 +1,25 @@
+#################################################################################
+#Objeto:  (BANCO)
+#Funcionalidad: Actualizar bienes por liquidación (BANCO)
+#Sistema: Spei (BANCO) 
+#Fecha de Creación: 03/Julio/2019
+#Autor: Luis Guzmán [lguzmanc@frd.org.mx]
+#Actualizaciones: 
+#Versión: 1.0
+#################################################################################
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-prendaria-actualiza-bienes-liquidacion-service
+  namespace: prendario-datos-de-referencia
+  labels:
+    app: app-prendaria-actualiza-bienes-liquidacion
+spec:
+  type: ClusterIP
+  selector:
+    app: app-prendaria-actualiza-bienes-liquidacion
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
